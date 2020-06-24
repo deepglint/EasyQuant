@@ -447,7 +447,7 @@ layer2OutputName = layerToOurputName()
 beginLayerIndex = 1
 endLayerIndex = 110
 
-imageRoot = 'data/val3000/'
+imageRoot = 'data/calib/'
 f = open("data/list50.txt", 'r')
 lines = f.readlines()
 imageNames = []
