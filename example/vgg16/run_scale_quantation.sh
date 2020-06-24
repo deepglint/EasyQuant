@@ -1,0 +1,1 @@
+python tools/caffe_quanttable_e2e.py --proto=model/vgg16/VGG_ILSVRC_16_layers_deploy_new.prototxt --model=model/vgg16/VGG_ILSVRC_16_layers_new.caffemodel --mean 103.94 116.78 123.68 --norm=1.0 --images=data/val3000 --output=model/vgg16/vgg16.88.scale.table --gpu 1 --threshold 102400  --histgram True --cv2 True

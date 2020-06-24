@@ -1,0 +1,10 @@
+1. 安装依赖包
+	sudo apt-get install libboost-python-dev
+
+2. 修改Makefile开头的变量路径
+
+
+3. 执行make命令编译ncnn.so
+
+4. 把ncnn.so放到site-packages目录下(/home/zyy/anaconda3/lib/python3.7/site-packages)，在python 环境下import ncnn 进行测试，不报错即加载成功
+
