@@ -447,14 +447,15 @@ layer2OutputName = layerToOurputName()
 beginLayerIndex = 1
 endLayerIndex = 110
 
-f = open("list50.txt", 'r')
+imageRoot = 'data/val3000/'
+f = open("data/list50.txt", 'r')
 lines = f.readlines()
 imageNames = []
 for line in lines:
     imageName = str(line).strip()
     if len(imageName) < 1:
         continue
-    imageNames.append(imageName)
+    imageNames.append(imageRoot + imageName)
 
 
 shutil.copyfile(scale_table, 'original.table')

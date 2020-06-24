@@ -26,9 +26,6 @@ def parse_args():
     parser.add_argument('--save', dest='save',
                         help='path to saved shape pkl file', type=str, default='layerDims.pickle')
 
-    parser.add_argument('--table', dest='table', help='path to scale table', type = str)
-
-
     args = parser.parse_args()
     return args, parser
 
@@ -37,7 +34,6 @@ global args, parser
 args, parser = parse_args()
 proto = args.proto
 model = args.model
-scale_table = args.table
 
 beginLayerIndex = 1
 endLayerIndex = 110
@@ -93,3 +89,6 @@ def main():
     os.remove('temp.prototxt')
     with open(args.save, 'w') as file:
         pickle.dump(res, file)
+
+if __name__ == '__main__':
+    main()

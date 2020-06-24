@@ -37,7 +37,7 @@ from google.protobuf import text_format
 from scipy import stats
 import cv2
 
-np.set_printoptions(threshold='nan')
+# np.set_printoptions(threshold='nan')
 np.set_printoptions(suppress=True)
 
 def parse_args():
@@ -151,7 +151,7 @@ class QuantizeLayer:
         min_val = np.min(blob_data)
         self.blob_max = max(self.blob_max, max(abs(max_val), abs(min_val)))
         # Avoid unusually large activation by clip blob_max with threshold
-        self.th= min(self.blob_max,args.threshold)
+        self.th= min(self.blob_max, args.threshold)
 
     def initial_blob_distubution_interval(self):
         self.blob_distubution_interval = STATISTIC * self.th / INTERVAL_NUM

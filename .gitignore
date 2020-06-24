@@ -1,0 +1,16 @@
+# pickle file of result
+*.pickle
+*.pkl
+
+# log file
+*.log
+
+# model file
+*.param
+*.bin
+*.prototxt
+*.caffemodel
+
+# build object
+*.o
+*.so
