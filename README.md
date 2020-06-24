@@ -7,6 +7,7 @@ EasyQuant(EQ) is an efficient and simple post-training quantization method via e
 ## Requirements
 
 [ncnn](https://github.com/Tencent/ncnn)
+
 [caffe](https://github.com/BVLC/caffe)
 
 ```
