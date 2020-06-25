@@ -13,6 +13,7 @@ pip install requirements.txt
 ```
 
 ## Updates:
+* 06/25/2020: We have released EasyQuant.pdf paper and eq-ncnn.
 * 06/24/2020: We have released VGG16 example.
 
 ## Data Preparation
@@ -95,7 +96,7 @@ sh example/vgg16/run_validation.sh
 ### Speed Tests
 
 INT7 Post-training Inference VS INT8 on real devices.
-We implement our efficient designs on INT7 post-training inference which well be released in [ncnn]()
+We implement our efficient designs on INT7 post-training inference which well be released in [eq-ncnn](https://github.com/deepglint/eq-ncnn)
 <img src='./docs/int7Inference.png' width=900>
 
 #### 1. The latency (ms) performance on RK3399, whose inside is a 1.5 GHz 64-bit Quad-core ARM Cortex-A53. \#k means k threads.
