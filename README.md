@@ -121,7 +121,7 @@ PRs accepted.
 
 ## License and Citation
 
-MIT © DeepGlint
+BSD3 © DeepGlint
 ```
 @inproceedings{easyquant,
     title={EasyQuant: Post-training Quantization via Scale Optimization},
