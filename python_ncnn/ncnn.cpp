@@ -56,7 +56,11 @@ Net::Net()
     opt.blob_allocator = &g_blob_pool_allocator;
     opt.workspace_allocator = &g_workspace_pool_allocator;
 
+    // github recent release of ncnn
     net.opt = opt;
+    // if use rq-ncnn opt set using this api
+    // ncnn::set_default_option(opt);
+
     ncnn::set_cpu_powersave(1);
     ncnn::set_omp_dynamic(0);
     ncnn::set_omp_num_threads(opt.num_threads); 
