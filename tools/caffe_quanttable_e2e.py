@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # BSD 3-Clause License
 #
 # DeepGlint is pleased to support the open source community by making EasyQuant available.
@@ -28,7 +29,6 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# -*- coding: utf-8 -*-
 # Modified from https://github.com/BUG1989/caffe-int8-convert-tools
 
 # BUG1989 is pleased to support the open source community by supporting ncnn available.
@@ -570,8 +570,8 @@ def main():
     # default use CPU to forwark
     
     if args.gpu != 0:
-        caffe.set_device(0)
         caffe.set_mode_gpu()
+        caffe.set_device(0)
     
     # initial caffe net and the forword model(GPU or CPU)
     net = caffe.Net(net_file,caffe_model,caffe.TEST)

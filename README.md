@@ -4,7 +4,7 @@ EasyQuant(EQ) is an efficient and simple post-training quantization method via e
 
 ## Requirements
 
-[ncnn](https://github.com/deepglint/eq-ncnn)
+[eq-ncnn](https://github.com/deepglint/eq-ncnn)
 
 [caffe](https://github.com/BVLC/caffe)
 
@@ -17,7 +17,7 @@ pip install requirements.txt
 * 06/24/2020: We have released VGG16 example.
 
 ## Data Preparation
-First, for ImageNet1k classification task, please download [ImageNet2012](http://image-net.org/download). We random sampled 50 calibration images from ImageNet train set to `data/list50.txt` and we will evaluate quantified models on val set.
+First, for ImageNet1k classification task, please download [ImageNet2012](http://image-net.org/download). We random sampled 3000 calibration images from ImageNet val set to `data/calib.txt` for KLD quantization and select 50 samples from calib to `data/list50.txt` for EasyQuant scale finetuning. Then we will evaluate quantified models on val set.
 
 ## How to Run
 
