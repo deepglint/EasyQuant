@@ -1,6 +1,6 @@
 # EasyQuant: Post-training Quantization via Scale Optimization
 
-EasyQuant(EQ) is an efficient and simple post-training quantization method via effectively optimizing the scales of weights and activations. Our paper is available in [docs/EasyQuant.pdf](./docs/EasyQuant.pdf)
+EasyQuant(EQ) is an efficient and simple post-training quantization method via effectively optimizing the scales of weights and activations. Our paper is available on [arXiv](https://arxiv.org/pdf/2006.16669.pdf)
 
 ## Requirements
 
