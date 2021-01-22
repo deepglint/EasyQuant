@@ -9,7 +9,7 @@ EasyQuant(EQ) is an efficient and simple post-training quantization method via e
 [caffe](https://github.com/BVLC/caffe)
 
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Updates:
